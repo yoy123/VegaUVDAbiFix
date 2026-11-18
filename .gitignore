@@ -1,0 +1,17 @@
+# Build cache and external dependencies
+/DerivedData/
+/build/
+/dist/
+/Lilu.kext/
+/MacKernelSDK/
+/*.xcuserstate
+*.xcuserdata/
+*.xcworkspace/xcuserdata/
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+*.log
+.env
+*token*
+/VegaUVDAbiFix-backups/

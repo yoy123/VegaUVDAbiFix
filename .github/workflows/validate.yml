@@ -1,0 +1,22 @@
+name: Validate OpenCore installer
+on:
+  push:
+  pull_request:
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Python syntax validation
+        run: python3 -m py_compile scripts/efi.py
+      - name: Validate distributable metadata
+        run: |
+          python3 - <<'PY'
+          import plistlib
+          from pathlib import Path
+          p = plistlib.loads(Path("payload/VegaUVDAbiFix.kext/Contents/Info.plist").read_bytes())
+          assert p["CFBundleVersion"] == p["OSBundleCompatibleVersion"] == "0.1.0"
+          assert p["CFBundleIdentifier"] == "org.dan.gpu.VegaUVDAbiFix"
+          PY
