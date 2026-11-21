@@ -2,6 +2,8 @@
 
 Experimental OpenCore/Lilu plugin restoring AMD Vega UVD7 hardware video decoding on macOS Sequoia when OCLP uses Monterey AMD drivers.
 
+**The fix/uvd-reset-wait branch builds the 0.2.0 experimental recovery candidate.** It retains the hardware decode patch and adds a bounded GPU firmware clear to address the November 20 restart deadlock. Offline tests pass. Boot validation is pending. See [UVD recovery investigation](docs/uvd-recovery.md).
+
 **Status: v0.1.0-alpha — tested on one Mac only.** Source and installer are supplied for audit. Not affiliated with Apple, Acidanthera, PMheart, or OCLP.
 
 ## Results on tested system

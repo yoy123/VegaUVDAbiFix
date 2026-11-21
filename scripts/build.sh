@@ -28,7 +28,7 @@ xcodebuild -project CPUFriend.xcodeproj \
     PRODUCT_NAME=VegaUVDAbiFix \
     PRODUCT_BUNDLE_IDENTIFIER=org.dan.gpu.VegaUVDAbiFix \
     MODULE_NAME=org.dan.gpu.VegaUVDAbiFix \
-    MODULE_VERSION=0.1.0 \
+    MODULE_VERSION=0.2.0 \
     CODE_SIGNING_ALLOWED=NO \
     build
 product="$PWD/DerivedData/Build/Products/Debug/VegaUVDAbiFix.kext"
