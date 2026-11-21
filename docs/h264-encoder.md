@@ -55,3 +55,5 @@ Treating the already-initialized return as success alone would leave firmware ad
 The read-only [DTrace script](../scripts/trace_vce_start.d) records the relevant paths. Its private offsets are specific to the listed binaries; verify UUIDs before use. FBT probes at tail jumps can emit apparent return events before the tail-called function executes. Do not treat CAILVceControl's FBT return register as an actual status. The recorded conclusion uses leaf CailVceInit/CailVceLoadEngine returns and the non-tail engine/kernel returns.
 
 Relevant logs and machine-readable state are in [validation/20261120-h264-encode](validation/20261120-h264-encode/results.json). Full Apple disassemblies remain outside the repository.
+
+A [one-time startup capture](vce-startup-capture.md) is now armed for the next manual reboot. It passed a current-boot self-test; clean-boot evidence remains pending.

@@ -1,0 +1,39 @@
+{
+  "label": "org.dan.gpu.vce-startup-trace",
+  "installed_at": "2026-11-20T21:53:32.444962-05:00",
+  "armed_from_boot": 1795224329,
+  "selftest_directory": "/Library/Logs/VegaUVDAbiFix/selftest-1795224329-1795229542009417000",
+  "selftest_result": {
+    "boot": 1795224329,
+    "mode": "selftest",
+    "started_at": "2026-11-20T21:52:22.009735-05:00",
+    "phase": "completed",
+    "encodes": [
+      {
+        "codec": "h264",
+        "returncode": 187,
+        "elapsed": 1.034,
+        "user": "danielambiase",
+        "output_frames": []
+      },
+      {
+        "codec": "hevc",
+        "returncode": 0,
+        "elapsed": 0.968,
+        "user": "danielambiase",
+        "output_frames": [
+          "[out#0/null @ 0x7f8d8a007100]   Output stream #0:0 (video): 24 frames encoded; 24 packets muxed (164072 bytes);"
+        ]
+      }
+    ],
+    "trace_ready_boot_seconds": 5214.366,
+    "finished_at": "2026-11-20T21:52:28.939420-05:00"
+  },
+  "files": {
+    "/Library/LaunchDaemons/org.dan.gpu.vce-startup-trace.plist": "27f7b7b252a71078e3e2da472f24ae159cb9870d698ceec3d3ec64c2f1eacdbb",
+    "/Library/Application Support/VegaUVDAbiFix/capture_vce_boot.py": "9189615d1a575397eb68a7b9b4f8358d0c532756331aaa6572e960f634995c30",
+    "/Library/Application Support/VegaUVDAbiFix/trace_vce_boot.d": "efbc21863435b3035face80af7dd0e27006e87666efccd95bef93138d70aaf73"
+  },
+  "log_directory": "/Library/Logs/VegaUVDAbiFix",
+  "purpose": "One capture on next boot; automatic H264/HEVC test after GUI login; driver and EFI unchanged."
+}

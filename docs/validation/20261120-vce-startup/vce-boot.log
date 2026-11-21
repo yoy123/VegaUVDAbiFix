@@ -1,0 +1,56 @@
+TRACE_READY wall=2026 Nov 20 21:52:23 ns=2798101777496
+ns=2800544251110 tid=206042 KERNEL_START pid=34584 channel=6 size=12
+ns=2800544268175 tid=206042 VCE_START pid=34584 started=0 firmware_loaded=1 refs=0
+ns=2800596727662 tid=206042 CAIL_VCE pid=34584 op=7 initialized=1
+ns=2800596736098 tid=206042 LOAD_ENTER pid=34584 flag=0x10
+ns=2800596751428 tid=206042 LOAD_RESULT pid=34584 status=0 flag=0x10
+ns=2800596755920 tid=206042 CAIL_VCE pid=34584 op=1 initialized=1
+ns=2800596760009 tid=206042 INIT_ENTER pid=34584 context=ffffff953e993000 flags=0x10 size=0xd8
+
+              com.apple.kext.AMDRadeonX5000HWLibs`AmdCailServices::vceControl(CailVceFuncId, CailVceInput*, CailVceOutput*)+0x2e3
+              com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCEHWEngine::start()+0x50
+              com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVega10VideoContext::startEngine(sVideoContextEngineInfo*, unsigned long long)+0xf0
+              kernel`shim_io_connect_method_structureI_structureO+0x16c
+              kernel`IOUserClient::externalMethod(unsigned int, IOExternalMethodArguments*, IOExternalMethodDispatch*, OSObject*, void*)+0x356
+              kernel`IOUserClient::callExternalMethod(unsigned int, IOExternalMethodArguments*)+0x89
+              kernel`is_io_connect_method+0x31d
+              kernel`_Xio_connect_method+0x22c
+              kernel`ipc_kmsg_send+0x71c
+              kernel`mach_msg_trap_send+0x127
+              kernel`mach_msg2_trap+0x3ea
+              kernel`mach_call_munger64+0x234
+ns=2800596765153 tid=206042 INIT_RESULT pid=34584 status=1 flags=0x10
+ns=2800596769158 tid=206042 VCE_INIT_CAIL_RESULT pid=34584 bool=0
+ns=2800596772082 tid=206042 VCE_START_RESULT pid=34584 bool=0
+ns=2800596780010 tid=206042 KERNEL_START_RESULT pid=34584 channel=6 status=0xe00002c7
+ns=2800653594198 tid=206044 KERNEL_START pid=34584 channel=6 size=12
+ns=2800653605902 tid=206044 VCE_START pid=34584 started=0 firmware_loaded=1 refs=0
+ns=2800706073122 tid=206044 CAIL_VCE pid=34584 op=7 initialized=1
+ns=2800706078922 tid=206044 LOAD_ENTER pid=34584 flag=0x10
+ns=2800706088911 tid=206044 LOAD_RESULT pid=34584 status=0 flag=0x10
+ns=2800706093204 tid=206044 CAIL_VCE pid=34584 op=1 initialized=1
+ns=2800706097021 tid=206044 INIT_ENTER pid=34584 context=ffffff953e993000 flags=0x10 size=0xd8
+
+              com.apple.kext.AMDRadeonX5000HWLibs`AmdCailServices::vceControl(CailVceFuncId, CailVceInput*, CailVceOutput*)+0x2e3
+              com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCEHWEngine::start()+0x50
+              com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVega10VideoContext::startEngine(sVideoContextEngineInfo*, unsigned long long)+0xf0
+              kernel`shim_io_connect_method_structureI_structureO+0x16c
+              kernel`IOUserClient::externalMethod(unsigned int, IOExternalMethodArguments*, IOExternalMethodDispatch*, OSObject*, void*)+0x356
+              kernel`IOUserClient::callExternalMethod(unsigned int, IOExternalMethodArguments*)+0x89
+              kernel`is_io_connect_method+0x31d
+              kernel`_Xio_connect_method+0x22c
+              kernel`ipc_kmsg_send+0x71c
+              kernel`mach_msg_trap_send+0x127
+              kernel`mach_msg2_trap+0x3ea
+              kernel`mach_call_munger64+0x234
+ns=2800706102401 tid=206044 INIT_RESULT pid=34584 status=1 flags=0x10
+ns=2800706106372 tid=206044 VCE_INIT_CAIL_RESULT pid=34584 bool=0
+ns=2800706109418 tid=206044 VCE_START_RESULT pid=34584 bool=0
+ns=2800706117211 tid=206044 KERNEL_START_RESULT pid=34584 channel=6 status=0xe00002c7
+ns=2801552035036 tid=206119 KERNEL_START pid=34593 channel=2 size=12
+ns=2801553348297 tid=206119 KERNEL_START_RESULT pid=34593 channel=2 status=0x0
+ns=2801565635074 tid=206121 KERNEL_START pid=34593 channel=2 size=12
+ns=2801565645992 tid=206121 KERNEL_START_RESULT pid=34593 channel=2 status=0x0
+
+TRACE_END wall=2026 Nov 20 21:52:28
+

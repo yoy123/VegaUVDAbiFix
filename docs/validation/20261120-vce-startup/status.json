@@ -1,0 +1,26 @@
+{
+  "boot": 1795224329,
+  "mode": "selftest",
+  "started_at": "2026-11-20T21:52:22.009735-05:00",
+  "phase": "completed",
+  "encodes": [
+    {
+      "codec": "h264",
+      "returncode": 187,
+      "elapsed": 1.034,
+      "user": "danielambiase",
+      "output_frames": []
+    },
+    {
+      "codec": "hevc",
+      "returncode": 0,
+      "elapsed": 0.968,
+      "user": "danielambiase",
+      "output_frames": [
+        "[out#0/null @ 0x7f8d8a007100]   Output stream #0:0 (video): 24 frames encoded; 24 packets muxed (164072 bytes);"
+      ]
+    }
+  ],
+  "trace_ready_boot_seconds": 5214.366,
+  "finished_at": "2026-11-20T21:52:28.939420-05:00"
+}
