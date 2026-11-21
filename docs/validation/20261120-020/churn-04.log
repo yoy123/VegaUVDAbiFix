@@ -1,0 +1,57 @@
+[h264 @ 0x7fe03a807400] Reinit context to 1920x1088, pix_fmt: yuv420p
+[vist#0:0/h264 @ 0x7fe03a807cc0] Selecting decoder 'h264' because of requested hwaccel method videotoolbox
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/vegauvd-020-postboot/h264_1080p60.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 27589 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(progressive, left), 1920x1080 [SAR 1:1 DAR 16:9], 27584 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.102 libx264
+[out#0/null @ 0x7fe03a904080] No explicit maps, mapping streams automatically...
+[vost#0:0/wrapped_avframe @ 0x7fe03a904b00] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+[vost#0:0/wrapped_avframe @ 0x7fe03a904b00] Starting thread...
+[vf#0:0 @ 0x7fe03b808200] Starting thread...
+[vist#0:0/h264 @ 0x7fe03a807cc0] [dec:h264 @ 0x7fe03a906000] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe03a8063c0] Starting thread...
+[h264 @ 0x7fe03a9084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+[graph -1 input from stream 0:0 @ 0x7fe029f06780] w:1920 h:1080 pixfmt:videotoolbox_vld tb:1/15360 fr:60/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[graph -1 input from stream 0:0 @ 0x7fe029f06780] video frame properties congruent with link at pts_time: 0
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Stream #0:0(und): Video: wrapped_avframe, 1 reference frame, nv12(progressive, left), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.102 wrapped_avframe
+      handler_name    : VideoHandler
+[out#0/null @ 0x7fe03a904080] Starting thread...
+frame=    1 fps=0.0 q=-0.0 size=N/A time=00:00:00.01 bitrate=N/A speed=0.0332x elapsed=0:00:00.50    
+frame=   58 fps= 58 q=-0.0 size=N/A time=00:00:00.96 bitrate=N/A speed=0.96x elapsed=0:00:01.00    
+[vost#0:0/wrapped_avframe @ 0x7fe03a904b00] [enc:wrapped_avframe @ 0x7fe03a905380] Encoder thread received EOF
+[vost#0:0/wrapped_avframe @ 0x7fe03a904b00] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7fe03a904080] All streams finished
+[out#0/null @ 0x7fe03a904080] Terminating thread with return code 0 (success)
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe03a8063c0] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x7fe03b808200] All consumers returned EOF
+[vf#0:0 @ 0x7fe03b808200] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x7fe03a807cc0] [dec:h264 @ 0x7fe03a906000] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x7fe03a807cc0] [dec:h264 @ 0x7fe03a906000] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7fe03a904080] Output file #0 (pipe:):
+[out#0/null @ 0x7fe03a904080]   Output stream #0:0 (video): 60 frames encoded; 60 packets muxed (25440 bytes); 
+[out#0/null @ 0x7fe03a904080]   Total: 60 packets (25440 bytes) muxed
+[out#0/null @ 0x7fe03a904080] video:25KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   60 fps= 57 q=-0.0 Lsize=N/A time=00:00:01.00 bitrate=N/A speed=0.946x elapsed=0:00:01.05    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe03a8063c0] Input file #0 (/tmp/vegauvd-020-postboot/h264_1080p60.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe03a8063c0]   Input stream #0:0 (video): 86 packets read (4969453 bytes); 62 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe03a8063c0]   Total: 86 packets (4969453 bytes) demuxed
+[AVIOContext @ 0x7fe03a806b00] Statistics: 5003833 bytes read, 2 seeks
+
+Exiting with exit code 0

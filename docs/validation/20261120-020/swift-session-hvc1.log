@@ -1,0 +1,4 @@
+H264 HW supported: true
+HEVC HW supported: true
+HW decode h264_640x360.mp4: 0
+HW decode hevc_640x360_hvc1.mp4: 0

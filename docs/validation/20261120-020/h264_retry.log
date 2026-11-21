@@ -1,0 +1,66 @@
+[h264 @ 0x7fddfa206c80] Reinit context to 640x368, pix_fmt: yuv420p
+[vist#0:0/h264 @ 0x7fddfa206c80] Selecting decoder 'h264' because of requested hwaccel method videotoolbox
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/vegauvd-020-postboot/h264_640x360.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Duration: 00:00:02.00, start: 0.000000, bitrate: 714 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High), 1 reference frame (avc1 / 0x31637661), yuv420p(progressive, left), 640x360 [SAR 1:1 DAR 16:9], 708 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.102 libx264
+[out#0/framemd5 @ 0x7fddfa2118c0] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x7fddfa211a80] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x7fddfa211a80] Starting thread...
+[vf#0:0 @ 0x7fddfa80f000] Starting thread...
+[vist#0:0/h264 @ 0x7fddfa206c80] [dec:h264 @ 0x7fddfa208080] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddfa205a80] Starting thread...
+[h264 @ 0x7fddfa209840] Reinit context to 640x368, pix_fmt: videotoolbox_vld
+[graph -1 input from stream 0:0 @ 0x7fddec009980] w:640 h:360 pixfmt:videotoolbox_vld tb:1/12288 fr:24/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[auto_scale_0 @ 0x7fddec00a740] w:iw h:ih flags:'' interl:0
+[Parsed_format_2 @ 0x7fddec009180] auto-inserting filter 'auto_scale_0' between the filter 'Parsed_format_1' and the filter 'Parsed_format_2'
+[auto_scale_0 @ 0x7fddec00a740] w:640 h:360 fmt:nv12 csp:unknown range:unknown sar:1/1 -> w:640 h:360 fmt:yuv420p csp:unknown range:unknown sar:1/1 flags:0x00000004
+[auto_scale_0 @ 0x7fddec00a740] [framesync @ 0x7fddec00a850] Selected 1/12288 time base
+[auto_scale_0 @ 0x7fddec00a740] [framesync @ 0x7fddec00a850] Sync level 1
+[graph -1 input from stream 0:0 @ 0x7fddec009980] video frame properties congruent with link at pts_time: 0
+Output #0, framemd5, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Stream #0:0(und): Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p(progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 66355 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.102 rawvideo
+      handler_name    : VideoHandler
+[out#0/framemd5 @ 0x7fddfa2118c0] Starting thread...
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddfa205a80] EOF while reading input
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddfa205a80] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x7fddfa206c80] [dec:h264 @ 0x7fddfa208080] Decoder thread received EOF packet
+[vist#0:0/h264 @ 0x7fddfa206c80] [dec:h264 @ 0x7fddfa208080] Decoder returned EOF, finishing
+[auto_scale_0 @ 0x7fddec00a740] [framesync @ 0x7fddec00a850] Sync level 0
+[vf#0:0 @ 0x7fddfa80f000] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x7fddfa80f000] All consumers returned EOF
+[vost#0:0/rawvideo @ 0x7fddfa211a80] [enc:rawvideo @ 0x7fddfa211fc0] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x7fddfa211a80] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x7fddfa80f000] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x7fddfa206c80] [dec:h264 @ 0x7fddfa208080] Terminating thread with return code 0 (success)
+[out#0/framemd5 @ 0x7fddfa2118c0] All streams finished
+[out#0/framemd5 @ 0x7fddfa2118c0] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x7fddfa2a6500] Statistics: 4055 bytes written, 0 seeks, 49 writeouts
+[out#0/framemd5 @ 0x7fddfa2118c0] Output file #0 (pipe:):
+[out#0/framemd5 @ 0x7fddfa2118c0]   Output stream #0:0 (video): 48 frames encoded; 48 packets muxed (16588800 bytes); 
+[out#0/framemd5 @ 0x7fddfa2118c0]   Total: 48 packets (16588800 bytes) muxed
+[out#0/framemd5 @ 0x7fddfa2118c0] video:16200KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   48 fps=0.0 q=-0.0 Lsize=       4KiB time=00:00:02.00 bitrate=  16.2kbits/s speed=3.14x elapsed=0:00:00.63    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddfa205a80] Input file #0 (/tmp/vegauvd-020-postboot/h264_640x360.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddfa205a80]   Input stream #0:0 (video): 48 packets read (177088 bytes); 48 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddfa205a80]   Total: 48 packets (177088 bytes) demuxed
+[AVIOContext @ 0x7fddfa206340] Statistics: 212648 bytes read, 2 seeks
+
+Exiting with exit code 0

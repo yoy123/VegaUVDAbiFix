@@ -1,0 +1,57 @@
+[h264 @ 0x7f7db0005780] Reinit context to 640x368, pix_fmt: yuv420p
+[vist#0:0/h264 @ 0x7f7db0005780] Selecting decoder 'h264' because of requested hwaccel method videotoolbox
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/vegauvd-020-postboot/h264_640x360.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Duration: 00:00:02.00, start: 0.000000, bitrate: 714 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High), 1 reference frame (avc1 / 0x31637661), yuv420p(progressive, left), 640x360 [SAR 1:1 DAR 16:9], 708 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.102 libx264
+[out#0/framemd5 @ 0x7f7db00103c0] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x7f7db0010580] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x7f7db0010580] Starting thread...
+[vf#0:0 @ 0x7f7daf80aa00] Starting thread...
+[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780] Starting thread...
+[h264 @ 0x7f7db00081c0] VideoToolbox session not available.
+[h264 @ 0x7f7db00081c0] Failed setup for format videotoolbox_vld: hwaccel initialisation returned error.
+[h264 @ 0x7f7db00081c0] Reinit context to 640x368, pix_fmt: yuv420p
+[graph -1 input from stream 0:0 @ 0x7f7d99007780] w:640 h:360 pixfmt:yuv420p tb:1/12288 fr:24/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[auto_scale_0 @ 0x7f7d99008480] w:iw h:ih flags:'' interl:0
+[Parsed_hwdownload_0 @ 0x7f7d99005c40] auto-inserting filter 'auto_scale_0' between the filter 'graph -1 input from stream 0:0' and the filter 'Parsed_hwdownload_0'
+Impossible to convert between the formats supported by the filter 'graph -1 input from stream 0:0' and the filter 'auto_scale_0'
+Link 'graph -1 input from stream 0:0.default' -> 'auto_scale_0.default':
+  Pixel formats:
+    src: yuv420p
+    dst: yuv420p
+Link 'auto_scale_0.default' -> 'Parsed_hwdownload_0.default':
+  Pixel formats:
+    src: yuv420p yuyv422 rgb24 bgr24 yuv422p yuv444p yuv410p yuv411p gray monow monob pal8 yuvj420p yuvj422p yuvj444p uyvy422 bgr8 bgr4 bgr4_byte rgb8 rgb4 rgb4_byte nv12 nv21 argb rgba abgr bgra gray16be gray16le yuv440p yuvj440p yuva420p rgb48be rgb48le rgb565be rgb565le rgb555be rgb555le bgr565be bgr565le bgr555be bgr555le yuv420p16le yuv420p16be yuv422p16le yuv422p16be yuv444p16le yuv444p16be rgb444le rgb444be bgr444le bgr444be ya8 bgr48be bgr48le yuv420p9be yuv420p9le yuv420p10be yuv420p10le yuv422p10be yuv422p10le yuv444p9be yuv444p9le yuv444p10be yuv444p10le yuv422p9be yuv422p9le gbrp gbrp9be gbrp9le gbrp10be gbrp10le gbrp16be gbrp16le yuva422p yuva444p yuva420p9be yuva420p9le yuva422p9be yuva422p9le yuva444p9be yuva444p9le yuva420p10be yuva420p10le yuva422p10be yuva422p10le yuva444p10be yuva444p10le yuva420p16be yuva420p16le yuva422p16be yuva422p16le yuva444p16be yuva444p16le xyz12le xyz12be nv16 nv20le nv20be rgba64be rgba64le bgra64be bgra64le yvyu422 ya16be ya16le gbrap gbrap16be gbrap16le 0rgb rgb0 0bgr bgr0 yuv420p12be yuv420p12le yuv420p14be yuv420p14le yuv422p12be yuv422p12le yuv422p14be yuv422p14le yuv444p12be yuv444p12le yuv444p14be yuv444p14le gbrp12be gbrp12le gbrp14be gbrp14le yuvj411p yuv440p10le yuv440p10be yuv440p12le yuv440p12be ayuv64le ayuv64be p010le p010be gbrap12be gbrap12le gbrap10be gbrap10le gray12be gray12le gray10be gray10le p016le p016be gray9be gray9le gbrpf32be gbrpf32le gbrapf32be gbrapf32le gray14be gray14le grayf32be grayf32le yuva422p12be yuva422p12le yuva444p12be yuva444p12le nv24 nv42 y210le x2rgb10le x2bgr10le p210be p210le p410be p410le p216be p216le p416be p416le vuya vuyx p012le p012be y212le xv30le xv36be xv36le p212be p212le p412be p412le gbrap14be gbrap14le ayuv uyva vyu444 v30xle y216le xv48be xv48le yuv444p10msbbe yuv444p10msble yuv444p12msbbe yuv444p12msble gbrp10msbbe gbrp10msble gbrp12msbbe gbrp12msble
+    dst: vaapi dxva2_vld vdpau qsv mmal d3d11va_vld cuda videotoolbox_vld mediacodec d3d11 drm_prime opencl vulkan d3d12 amf ohcodec
+[vf#0:0 @ 0x7f7daf80aa00] Error reinitializing filters!
+[vf#0:0 @ 0x7f7daf80aa00] Task finished with error code: -78 (Function not implemented)
+[vf#0:0 @ 0x7f7daf80aa00] Terminating thread with return code -78 (Function not implemented)
+[vost#0:0/rawvideo @ 0x7f7db0010580] [enc:rawvideo @ 0x7f7db00109c0] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x7f7db0010580] [enc:rawvideo @ 0x7f7db00109c0] Could not open encoder before EOF
+[vost#0:0/rawvideo @ 0x7f7db0010580] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/rawvideo @ 0x7f7db0010580] Terminating thread with return code -22 (Invalid argument)
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Decoder thread received EOF packet
+[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Terminating thread with return code 0 (success)
+[out#0/framemd5 @ 0x7f7db00103c0] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.35    
+[AVIOContext @ 0x7f7db00a4ec0] Statistics: 0 bytes written, 0 seeks, 0 writeouts
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780] Input file #0 (/tmp/vegauvd-020-postboot/h264_640x360.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780]   Input stream #0:0 (video): 13 packets read (52876 bytes); 2 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780]   Total: 13 packets (52876 bytes) demuxed
+[AVIOContext @ 0x7f7db0004e80] Statistics: 99700 bytes read, 2 seeks
+Conversion failed!
+
+Exiting with exit code -78

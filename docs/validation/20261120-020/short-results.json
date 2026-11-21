@@ -1,0 +1,65 @@
+{
+  "started": "2026-11-20 20:42:39 -0500",
+  "before": [
+    {
+      "HWChannel UVDDec | Commands Completed": 0,
+      "HWChannel UVDDec | Commands Submitted": 0,
+      "Temperature(C)": 75,
+      "recoveryCount": 0
+    },
+    {
+      "HWChannel UVDDec | Commands Completed": 0,
+      "HWChannel UVDDec | Commands Submitted": 0,
+      "Temperature(C)": 74,
+      "recoveryCount": 0
+    }
+  ],
+  "tests": [
+    {
+      "codec": "h264",
+      "mode": "software",
+      "returncode": 0,
+      "frames": 48,
+      "elapsed_seconds": 0.224,
+      "last_log": "@ 0x7f82f2013100] Decoder thread received EOF packet\n[vist#0:0/h264 @ 0x7f82f2007380] [dec:h264 @ 0x7f82f2013100] Decoder returned EOF, finishing\n[vf#0:0 @ 0x7f82f280f000] Filtergraph returned EOF, finishing\n[vf#0:0 @ 0x7f82f280f000] All consumers returned EOF\n[vf#0:0 @ 0x7f82f280f000] Terminating thread with return code 0 (success)\n[vist#0:0/h264 @ 0x7f82f2007380] [dec:h264 @ 0x7f82f2013100] Terminating thread with return code 0 (success)\n[vost#0:0/rawvideo @ 0x7f82f2012240] [enc:rawvideo @ 0x7f82f20126c0] Encoder thread received EOF\n[vost#0:0/rawvideo @ 0x7f82f2012240] Terminating thread with return code 0 (success)\n[out#0/framemd5 @ 0x7f82f2012080] All streams finished\n[out#0/framemd5 @ 0x7f82f2012080] Terminating thread with return code 0 (success)\n[AVIOContext @ 0x7f82f20a6980] Statistics: 4055 bytes written, 0 seeks, 49 writeouts\n[out#0/framemd5 @ 0x7f82f2012080] Output file #0 (pipe:):\n[out#0/framemd5 @ 0x7f82f2012080]   Output stream #0:0 (video): 48 frames encoded; 48 packets muxed (16588800 bytes); \n[out#0/framemd5 @ 0x7f82f2012080]   Total: 48 packets (16588800 bytes) muxed\n[out#0/framemd5 @ 0x7f82f2012080] video:16200KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=   48 fps=0.0 q=-0.0 Lsize=       4KiB time=00:00:02.00 bitrate=  16.2kbits/s speed=39.9x elapsed=0:00:00.05    \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f82f2006300] Input file #0 (/tmp/vegauvd-020-postboot/h264_640x360.mp4):\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f82f2006300]   Input stream #0:0 (video): 48 packets read (177088 bytes); 48 frames decoded; 0 decode errors; \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f82f2006300]   Total: 48 packets (177088 bytes) demuxed\n[AVIOContext @ 0x7f82f2006a40] Statistics: 212648 bytes read, 2 seeks\n\nExiting with exit code 0\n"
+    },
+    {
+      "codec": "h264",
+      "mode": "hardware",
+      "returncode": 178,
+      "frames": 0,
+      "elapsed_seconds": 0.529,
+      "last_log": "d12 amf ohcodec\n[vf#0:0 @ 0x7f7daf80aa00] Error reinitializing filters!\n[vf#0:0 @ 0x7f7daf80aa00] Task finished with error code: -78 (Function not implemented)\n[vf#0:0 @ 0x7f7daf80aa00] Terminating thread with return code -78 (Function not implemented)\n[vost#0:0/rawvideo @ 0x7f7db0010580] [enc:rawvideo @ 0x7f7db00109c0] Encoder thread received EOF\n[vost#0:0/rawvideo @ 0x7f7db0010580] [enc:rawvideo @ 0x7f7db00109c0] Could not open encoder before EOF\n[vost#0:0/rawvideo @ 0x7f7db0010580] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/rawvideo @ 0x7f7db0010580] Terminating thread with return code -22 (Invalid argument)\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780] Terminating thread with return code 0 (success)\n[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Decoder thread received EOF packet\n[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Decoder returned EOF, finishing\n[vist#0:0/h264 @ 0x7f7db0005780] [dec:h264 @ 0x7f7db0011700] Terminating thread with return code 0 (success)\n[out#0/framemd5 @ 0x7f7db00103c0] Nothing was written into output file, because at least one of its streams received no packets.\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.35    \n[AVIOContext @ 0x7f7db00a4ec0] Statistics: 0 bytes written, 0 seeks, 0 writeouts\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780] Input file #0 (/tmp/vegauvd-020-postboot/h264_640x360.mp4):\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780]   Input stream #0:0 (video): 13 packets read (52876 bytes); 2 frames decoded; 0 decode errors; \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f7db0004780]   Total: 13 packets (52876 bytes) demuxed\n[AVIOContext @ 0x7f7db0004e80] Statistics: 99700 bytes read, 2 seeks\nConversion failed!\n\nExiting with exit code -78\n"
+    },
+    {
+      "codec": "hevc",
+      "mode": "software",
+      "returncode": 0,
+      "frames": 48,
+      "elapsed_seconds": 0.226,
+      "last_log": "@ 0x7fc4a91065c0] Decoder thread received EOF packet\n[vist#0:0/hevc @ 0x7fc4a9104080] [dec:hevc @ 0x7fc4a91065c0] Decoder returned EOF, finishing\n[vf#0:0 @ 0x7fc4a9808200] Filtergraph returned EOF, finishing\n[vf#0:0 @ 0x7fc4a9808200] All consumers returned EOF\n[vf#0:0 @ 0x7fc4a9808200] Terminating thread with return code 0 (success)\n[vost#0:0/rawvideo @ 0x7fc4a91054c0] [enc:rawvideo @ 0x7fc4a91059c0] Encoder thread received EOF\n[vist#0:0/hevc @ 0x7fc4a9104080] [dec:hevc @ 0x7fc4a91065c0] Terminating thread with return code 0 (success)\n[vost#0:0/rawvideo @ 0x7fc4a91054c0] Terminating thread with return code 0 (success)\n[out#0/framemd5 @ 0x7fc4a9104b40] All streams finished\n[out#0/framemd5 @ 0x7fc4a9104b40] Terminating thread with return code 0 (success)\n[AVIOContext @ 0x7fc4a924fc00] Statistics: 4055 bytes written, 0 seeks, 49 writeouts\n[out#0/framemd5 @ 0x7fc4a9104b40] Output file #0 (pipe:):\n[out#0/framemd5 @ 0x7fc4a9104b40]   Output stream #0:0 (video): 48 frames encoded; 48 packets muxed (16588800 bytes); \n[out#0/framemd5 @ 0x7fc4a9104b40]   Total: 48 packets (16588800 bytes) muxed\n[out#0/framemd5 @ 0x7fc4a9104b40] video:16200KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=   48 fps=0.0 q=-0.0 Lsize=       4KiB time=00:00:02.00 bitrate=  16.2kbits/s speed=38.7x elapsed=0:00:00.05    \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fc4a8706340] Input file #0 (/tmp/vegauvd-020-postboot/hevc_640x360.mp4):\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fc4a8706340]   Input stream #0:0 (video): 48 packets read (132844 bytes); 48 frames decoded; 0 decode errors; \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fc4a8706340]   Total: 48 packets (132844 bytes) demuxed\n[AVIOContext @ 0x7fc4a8706a40] Statistics: 173226 bytes read, 2 seeks\n\nExiting with exit code 0\n"
+    },
+    {
+      "codec": "hevc",
+      "mode": "hardware",
+      "returncode": 0,
+      "frames": 48,
+      "elapsed_seconds": 0.793,
+      "last_log": "9975710dc0] [dec:hevc @ 0x7f997570a300] Decoder returned EOF, finishing\n[auto_scale_0 @ 0x7f9976708300] [framesync @ 0x7f9976708410] Sync level 0\n[vf#0:0 @ 0x7f9975822400] Filtergraph returned EOF, finishing\n[vf#0:0 @ 0x7f9975822400] All consumers returned EOF\n[vost#0:0/rawvideo @ 0x7f9975708e80] [enc:rawvideo @ 0x7f9975709500] Encoder thread received EOF\n[vost#0:0/rawvideo @ 0x7f9975708e80] Terminating thread with return code 0 (success)\n[vf#0:0 @ 0x7f9975822400] Terminating thread with return code 0 (success)\n[out#0/framemd5 @ 0x7f9975708600] All streams finished\n[out#0/framemd5 @ 0x7f9975708600] Terminating thread with return code 0 (success)\n[vist#0:0/hevc @ 0x7f9975710dc0] [dec:hevc @ 0x7f997570a300] Terminating thread with return code 0 (success)\n[AVIOContext @ 0x7f9976014d80] Statistics: 4055 bytes written, 0 seeks, 49 writeouts\n[out#0/framemd5 @ 0x7f9975708600] Output file #0 (pipe:):\n[out#0/framemd5 @ 0x7f9975708600]   Output stream #0:0 (video): 48 frames encoded; 48 packets muxed (16588800 bytes); \n[out#0/framemd5 @ 0x7f9975708600]   Total: 48 packets (16588800 bytes) muxed\n[out#0/framemd5 @ 0x7f9975708600] video:16200KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=   48 fps=0.0 q=-0.0 Lsize=       4KiB time=00:00:02.00 bitrate=  16.2kbits/s speed= 3.2x elapsed=0:00:00.62    \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f99757063c0] Input file #0 (/tmp/vegauvd-020-postboot/hevc_640x360.mp4):\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f99757063c0]   Input stream #0:0 (video): 48 packets read (132844 bytes); 48 frames decoded; 0 decode errors; \n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f99757063c0]   Total: 48 packets (132844 bytes) demuxed\n[AVIOContext @ 0x7f9975706ac0] Statistics: 173226 bytes read, 2 seeks\n\nExiting with exit code 0\n"
+    }
+  ],
+  "after": [
+    {
+      "HWChannel UVDDec | Commands Completed": 50,
+      "HWChannel UVDDec | Commands Submitted": 50,
+      "Temperature(C)": 75,
+      "recoveryCount": 0
+    },
+    {
+      "HWChannel UVDDec | Commands Completed": 0,
+      "HWChannel UVDDec | Commands Submitted": 0,
+      "Temperature(C)": 75,
+      "recoveryCount": 0
+    }
+  ]
+}

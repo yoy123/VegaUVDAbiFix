@@ -1,0 +1,252 @@
+[h264 @ 0x7fd282005a00] Reinit context to 1920x1088, pix_fmt: yuv420p
+[vist#0:0/h264 @ 0x7fd281704080] Selecting decoder 'h264' because of requested hwaccel method videotoolbox
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/vegauvd-020-postboot/h264_1080p60.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 27589 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(progressive, left), 1920x1080 [SAR 1:1 DAR 16:9], 27584 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.102 libx264
+[out#0/null @ 0x7fd271704080] No explicit maps, mapping streams automatically...
+[vost#0:0/wrapped_avframe @ 0x7fd271704b00] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+[vost#0:0/wrapped_avframe @ 0x7fd271704b00] Starting thread...
+[vf#0:0 @ 0x7fd271808200] Starting thread...
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] Starting thread...
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+[graph -1 input from stream 0:0 @ 0x7fd2822076c0] w:1920 h:1080 pixfmt:videotoolbox_vld tb:1/15360 fr:60/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[graph -1 input from stream 0:0 @ 0x7fd2822076c0] video frame properties congruent with link at pts_time: 0
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Stream #0:0(und): Video: wrapped_avframe, 1 reference frame, nv12(progressive, left), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.102 wrapped_avframe
+      handler_name    : VideoHandler
+[out#0/null @ 0x7fd271704080] Starting thread...
+frame=    1 fps=0.0 q=-0.0 size=N/A time=00:00:00.01 bitrate=N/A speed=0.0332x elapsed=0:00:00.50    
+[vist#0:0/h264 @ 0x7fd281704080] Resumed reading at pts 0.517 with rate 1.050 after a lag of 0.607s
+frame=   40 fps= 40 q=-0.0 size=N/A time=00:00:00.66 bitrate=N/A speed=0.664x elapsed=0:00:01.00    
+frame=   72 fps= 48 q=-0.0 size=N/A time=00:00:01.20 bitrate=N/A speed=0.795x elapsed=0:00:01.50    
+frame=  103 fps= 51 q=-0.0 size=N/A time=00:00:01.71 bitrate=N/A speed=0.853x elapsed=0:00:02.01    
+frame=  135 fps= 54 q=-0.0 size=N/A time=00:00:02.25 bitrate=N/A speed=0.895x elapsed=0:00:02.51    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+frame=  176 fps= 58 q=-0.0 size=N/A time=00:00:02.95 bitrate=N/A speed=0.977x elapsed=0:00:03.01    
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame=  198 fps= 56 q=-0.0 size=N/A time=00:00:03.30 bitrate=N/A speed=0.937x elapsed=0:00:03.52    
+frame=  230 fps= 57 q=-0.0 size=N/A time=00:00:03.83 bitrate=N/A speed=0.952x elapsed=0:00:04.02    
+frame=  262 fps= 58 q=-0.0 size=N/A time=00:00:04.36 bitrate=N/A speed=0.964x elapsed=0:00:04.53    
+frame=  293 fps= 58 q=-0.0 size=N/A time=00:00:04.88 bitrate=N/A speed=0.97x elapsed=0:00:05.03    
+frame=  325 fps= 59 q=-0.0 size=N/A time=00:00:05.41 bitrate=N/A speed=0.978x elapsed=0:00:05.53    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame=  360 fps= 60 q=-0.0 size=N/A time=00:00:06.00 bitrate=N/A speed=0.993x elapsed=0:00:06.03    
+frame=  388 fps= 59 q=-0.0 size=N/A time=00:00:06.46 bitrate=N/A speed=0.989x elapsed=0:00:06.53    
+frame=  420 fps= 60 q=-0.0 size=N/A time=00:00:07.00 bitrate=N/A speed=0.994x elapsed=0:00:07.04    
+frame=  452 fps= 60 q=-0.0 size=N/A time=00:00:07.53 bitrate=N/A speed=0.998x elapsed=0:00:07.54    
+frame=  484 fps= 60 q=-0.0 size=N/A time=00:00:08.06 bitrate=N/A speed=   1x elapsed=0:00:08.04    
+frame=  515 fps= 60 q=-0.0 size=N/A time=00:00:08.58 bitrate=N/A speed=   1x elapsed=0:00:08.54    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame=  547 fps= 60 q=-0.0 size=N/A time=00:00:09.11 bitrate=N/A speed=1.01x elapsed=0:00:09.04    
+frame=  578 fps= 61 q=-0.0 size=N/A time=00:00:09.63 bitrate=N/A speed=1.01x elapsed=0:00:09.54    
+frame=  610 fps= 61 q=-0.0 size=N/A time=00:00:10.16 bitrate=N/A speed=1.01x elapsed=0:00:10.05    
+frame=  642 fps= 61 q=-0.0 size=N/A time=00:00:10.70 bitrate=N/A speed=1.01x elapsed=0:00:10.55    
+frame=  673 fps= 61 q=-0.0 size=N/A time=00:00:11.21 bitrate=N/A speed=1.01x elapsed=0:00:11.06    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+frame=  705 fps= 61 q=-0.0 size=N/A time=00:00:11.75 bitrate=N/A speed=1.02x elapsed=0:00:11.56    
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame=  737 fps= 61 q=-0.0 size=N/A time=00:00:12.28 bitrate=N/A speed=1.02x elapsed=0:00:12.06    
+frame=  769 fps= 61 q=-0.0 size=N/A time=00:00:12.81 bitrate=N/A speed=1.02x elapsed=0:00:12.56    
+frame=  799 fps= 61 q=-0.0 size=N/A time=00:00:13.31 bitrate=N/A speed=1.02x elapsed=0:00:13.07    
+frame=  830 fps= 61 q=-0.0 size=N/A time=00:00:13.83 bitrate=N/A speed=1.02x elapsed=0:00:13.57    
+frame=  860 fps= 61 q=-0.0 size=N/A time=00:00:14.33 bitrate=N/A speed=1.02x elapsed=0:00:14.08    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame=  900 fps= 62 q=-0.0 size=N/A time=00:00:15.00 bitrate=N/A speed=1.03x elapsed=0:00:14.58    
+frame=  920 fps= 61 q=-0.0 size=N/A time=00:00:15.33 bitrate=N/A speed=1.02x elapsed=0:00:15.08    
+frame=  950 fps= 61 q=-0.0 size=N/A time=00:00:15.83 bitrate=N/A speed=1.02x elapsed=0:00:15.59    
+frame=  980 fps= 61 q=-0.0 size=N/A time=00:00:16.33 bitrate=N/A speed=1.01x elapsed=0:00:16.09    
+frame= 1011 fps= 61 q=-0.0 size=N/A time=00:00:16.85 bitrate=N/A speed=1.02x elapsed=0:00:16.59    
+frame= 1041 fps= 61 q=-0.0 size=N/A time=00:00:17.35 bitrate=N/A speed=1.01x elapsed=0:00:17.10    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 1080 fps= 61 q=-0.0 size=N/A time=00:00:18.00 bitrate=N/A speed=1.02x elapsed=0:00:17.60    
+frame= 1101 fps= 61 q=-0.0 size=N/A time=00:00:18.35 bitrate=N/A speed=1.01x elapsed=0:00:18.11    
+frame= 1131 fps= 61 q=-0.0 size=N/A time=00:00:18.85 bitrate=N/A speed=1.01x elapsed=0:00:18.61    
+frame= 1161 fps= 61 q=-0.0 size=N/A time=00:00:19.35 bitrate=N/A speed=1.01x elapsed=0:00:19.11    
+frame= 1192 fps= 61 q=-0.0 size=N/A time=00:00:19.86 bitrate=N/A speed=1.01x elapsed=0:00:19.61    
+frame= 1222 fps= 61 q=-0.0 size=N/A time=00:00:20.36 bitrate=N/A speed=1.01x elapsed=0:00:20.12    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 1260 fps= 61 q=-0.0 size=N/A time=00:00:21.00 bitrate=N/A speed=1.02x elapsed=0:00:20.62    
+frame= 1282 fps= 61 q=-0.0 size=N/A time=00:00:21.36 bitrate=N/A speed=1.01x elapsed=0:00:21.12    
+frame= 1313 fps= 61 q=-0.0 size=N/A time=00:00:21.88 bitrate=N/A speed=1.01x elapsed=0:00:21.62    
+frame= 1343 fps= 61 q=-0.0 size=N/A time=00:00:22.38 bitrate=N/A speed=1.01x elapsed=0:00:22.13    
+frame= 1373 fps= 61 q=-0.0 size=N/A time=00:00:22.88 bitrate=N/A speed=1.01x elapsed=0:00:22.63    
+frame= 1403 fps= 61 q=-0.0 size=N/A time=00:00:23.38 bitrate=N/A speed=1.01x elapsed=0:00:23.13    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 1440 fps= 61 q=-0.0 size=N/A time=00:00:24.00 bitrate=N/A speed=1.02x elapsed=0:00:23.64    
+frame= 1463 fps= 61 q=-0.0 size=N/A time=00:00:24.38 bitrate=N/A speed=1.01x elapsed=0:00:24.14    
+frame= 1494 fps= 61 q=-0.0 size=N/A time=00:00:24.90 bitrate=N/A speed=1.01x elapsed=0:00:24.65    
+frame= 1524 fps= 61 q=-0.0 size=N/A time=00:00:25.40 bitrate=N/A speed=1.01x elapsed=0:00:25.15    
+frame= 1554 fps= 61 q=-0.0 size=N/A time=00:00:25.90 bitrate=N/A speed=1.01x elapsed=0:00:25.65    
+frame= 1585 fps= 61 q=-0.0 size=N/A time=00:00:26.41 bitrate=N/A speed=1.01x elapsed=0:00:26.15    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 1620 fps= 61 q=-0.0 size=N/A time=00:00:27.00 bitrate=N/A speed=1.01x elapsed=0:00:26.66    
+frame= 1645 fps= 61 q=-0.0 size=N/A time=00:00:27.41 bitrate=N/A speed=1.01x elapsed=0:00:27.16    
+frame= 1675 fps= 61 q=-0.0 size=N/A time=00:00:27.91 bitrate=N/A speed=1.01x elapsed=0:00:27.67    
+frame= 1705 fps= 61 q=-0.0 size=N/A time=00:00:28.41 bitrate=N/A speed=1.01x elapsed=0:00:28.17    
+frame= 1735 fps= 61 q=-0.0 size=N/A time=00:00:28.91 bitrate=N/A speed=1.01x elapsed=0:00:28.67    
+frame= 1766 fps= 61 q=-0.0 size=N/A time=00:00:29.43 bitrate=N/A speed=1.01x elapsed=0:00:29.17    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 1800 fps= 61 q=-0.0 size=N/A time=00:00:30.00 bitrate=N/A speed=1.01x elapsed=0:00:29.68    
+frame= 1826 fps= 60 q=-0.0 size=N/A time=00:00:30.43 bitrate=N/A speed=1.01x elapsed=0:00:30.18    
+frame= 1857 fps= 61 q=-0.0 size=N/A time=00:00:30.95 bitrate=N/A speed=1.01x elapsed=0:00:30.68    
+frame= 1886 fps= 60 q=-0.0 size=N/A time=00:00:31.43 bitrate=N/A speed=1.01x elapsed=0:00:31.19    
+frame= 1917 fps= 60 q=-0.0 size=N/A time=00:00:31.95 bitrate=N/A speed=1.01x elapsed=0:00:31.69    
+frame= 1947 fps= 60 q=-0.0 size=N/A time=00:00:32.45 bitrate=N/A speed=1.01x elapsed=0:00:32.19    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 1980 fps= 61 q=-0.0 size=N/A time=00:00:33.00 bitrate=N/A speed=1.01x elapsed=0:00:32.70    
+frame= 2007 fps= 60 q=-0.0 size=N/A time=00:00:33.45 bitrate=N/A speed=1.01x elapsed=0:00:33.20    
+frame= 2037 fps= 60 q=-0.0 size=N/A time=00:00:33.95 bitrate=N/A speed=1.01x elapsed=0:00:33.70    
+frame= 2068 fps= 60 q=-0.0 size=N/A time=00:00:34.46 bitrate=N/A speed=1.01x elapsed=0:00:34.21    
+frame= 2098 fps= 60 q=-0.0 size=N/A time=00:00:34.96 bitrate=N/A speed=1.01x elapsed=0:00:34.71    
+frame= 2128 fps= 60 q=-0.0 size=N/A time=00:00:35.46 bitrate=N/A speed=1.01x elapsed=0:00:35.21    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 2160 fps= 60 q=-0.0 size=N/A time=00:00:36.00 bitrate=N/A speed=1.01x elapsed=0:00:35.72    
+frame= 2188 fps= 60 q=-0.0 size=N/A time=00:00:36.46 bitrate=N/A speed=1.01x elapsed=0:00:36.22    
+frame= 2218 fps= 60 q=-0.0 size=N/A time=00:00:36.96 bitrate=N/A speed=1.01x elapsed=0:00:36.72    
+frame= 2248 fps= 60 q=-0.0 size=N/A time=00:00:37.46 bitrate=N/A speed=1.01x elapsed=0:00:37.22    
+frame= 2279 fps= 60 q=-0.0 size=N/A time=00:00:37.98 bitrate=N/A speed=1.01x elapsed=0:00:37.73    
+frame= 2309 fps= 60 q=-0.0 size=N/A time=00:00:38.48 bitrate=N/A speed=1.01x elapsed=0:00:38.23    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 2340 fps= 60 q=-0.0 size=N/A time=00:00:39.00 bitrate=N/A speed=1.01x elapsed=0:00:38.73    
+frame= 2369 fps= 60 q=-0.0 size=N/A time=00:00:39.48 bitrate=N/A speed=1.01x elapsed=0:00:39.24    
+frame= 2400 fps= 60 q=-0.0 size=N/A time=00:00:40.00 bitrate=N/A speed=1.01x elapsed=0:00:39.74    
+frame= 2430 fps= 60 q=-0.0 size=N/A time=00:00:40.50 bitrate=N/A speed=1.01x elapsed=0:00:40.24    
+frame= 2460 fps= 60 q=-0.0 size=N/A time=00:00:41.00 bitrate=N/A speed=1.01x elapsed=0:00:40.75    
+frame= 2490 fps= 60 q=-0.0 size=N/A time=00:00:41.50 bitrate=N/A speed=1.01x elapsed=0:00:41.25    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 2520 fps= 60 q=-0.0 size=N/A time=00:00:42.00 bitrate=N/A speed=1.01x elapsed=0:00:41.75    
+frame= 2550 fps= 60 q=-0.0 size=N/A time=00:00:42.50 bitrate=N/A speed=1.01x elapsed=0:00:42.26    
+frame= 2580 fps= 60 q=-0.0 size=N/A time=00:00:43.00 bitrate=N/A speed=1.01x elapsed=0:00:42.76    
+frame= 2611 fps= 60 q=-0.0 size=N/A time=00:00:43.51 bitrate=N/A speed=1.01x elapsed=0:00:43.26    
+frame= 2641 fps= 60 q=-0.0 size=N/A time=00:00:44.01 bitrate=N/A speed=1.01x elapsed=0:00:43.76    
+frame= 2671 fps= 60 q=-0.0 size=N/A time=00:00:44.51 bitrate=N/A speed=1.01x elapsed=0:00:44.27    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 2701 fps= 60 q=-0.0 size=N/A time=00:00:45.01 bitrate=N/A speed=1.01x elapsed=0:00:44.77    
+frame= 2732 fps= 60 q=-0.0 size=N/A time=00:00:45.53 bitrate=N/A speed=1.01x elapsed=0:00:45.28    
+frame= 2762 fps= 60 q=-0.0 size=N/A time=00:00:46.03 bitrate=N/A speed=1.01x elapsed=0:00:45.78    
+frame= 2792 fps= 60 q=-0.0 size=N/A time=00:00:46.53 bitrate=N/A speed=1.01x elapsed=0:00:46.28    
+frame= 2822 fps= 60 q=-0.0 size=N/A time=00:00:47.03 bitrate=N/A speed=1.01x elapsed=0:00:46.79    
+frame= 2853 fps= 60 q=-0.0 size=N/A time=00:00:47.55 bitrate=N/A speed=1.01x elapsed=0:00:47.29    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 2883 fps= 60 q=-0.0 size=N/A time=00:00:48.05 bitrate=N/A speed=1.01x elapsed=0:00:47.79    
+frame= 2913 fps= 60 q=-0.0 size=N/A time=00:00:48.55 bitrate=N/A speed=1.01x elapsed=0:00:48.29    
+frame= 2943 fps= 60 q=-0.0 size=N/A time=00:00:49.05 bitrate=N/A speed=1.01x elapsed=0:00:48.80    
+frame= 2973 fps= 60 q=-0.0 size=N/A time=00:00:49.55 bitrate=N/A speed=   1x elapsed=0:00:49.30    
+frame= 3004 fps= 60 q=-0.0 size=N/A time=00:00:50.06 bitrate=N/A speed=1.01x elapsed=0:00:49.81    
+frame= 3034 fps= 60 q=-0.0 size=N/A time=00:00:50.56 bitrate=N/A speed=1.01x elapsed=0:00:50.31    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 3063 fps= 60 q=-0.0 size=N/A time=00:00:51.05 bitrate=N/A speed=   1x elapsed=0:00:50.81    
+frame= 3094 fps= 60 q=-0.0 size=N/A time=00:00:51.56 bitrate=N/A speed=   1x elapsed=0:00:51.31    
+frame= 3124 fps= 60 q=-0.0 size=N/A time=00:00:52.06 bitrate=N/A speed=   1x elapsed=0:00:51.82    
+frame= 3154 fps= 60 q=-0.0 size=N/A time=00:00:52.56 bitrate=N/A speed=   1x elapsed=0:00:52.32    
+frame= 3185 fps= 60 q=-0.0 size=N/A time=00:00:53.08 bitrate=N/A speed=   1x elapsed=0:00:52.83    
+frame= 3215 fps= 60 q=-0.0 size=N/A time=00:00:53.58 bitrate=N/A speed=   1x elapsed=0:00:53.33    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 3245 fps= 60 q=-0.0 size=N/A time=00:00:54.08 bitrate=N/A speed=   1x elapsed=0:00:53.83    
+frame= 3275 fps= 60 q=-0.0 size=N/A time=00:00:54.58 bitrate=N/A speed=   1x elapsed=0:00:54.34    
+frame= 3305 fps= 60 q=-0.0 size=N/A time=00:00:55.08 bitrate=N/A speed=   1x elapsed=0:00:54.84    
+frame= 3336 fps= 60 q=-0.0 size=N/A time=00:00:55.60 bitrate=N/A speed=   1x elapsed=0:00:55.34    
+frame= 3366 fps= 60 q=-0.0 size=N/A time=00:00:56.10 bitrate=N/A speed=   1x elapsed=0:00:55.85    
+frame= 3396 fps= 60 q=-0.0 size=N/A time=00:00:56.60 bitrate=N/A speed=   1x elapsed=0:00:56.35    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received flush packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, resetting
+[h264 @ 0x7fd2717084c0] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+frame= 3427 fps= 60 q=-0.0 size=N/A time=00:00:57.11 bitrate=N/A speed=   1x elapsed=0:00:56.85    
+frame= 3456 fps= 60 q=-0.0 size=N/A time=00:00:57.60 bitrate=N/A speed=   1x elapsed=0:00:57.36    
+frame= 3487 fps= 60 q=-0.0 size=N/A time=00:00:58.11 bitrate=N/A speed=   1x elapsed=0:00:57.86    
+frame= 3517 fps= 60 q=-0.0 size=N/A time=00:00:58.61 bitrate=N/A speed=   1x elapsed=0:00:58.36    
+frame= 3547 fps= 60 q=-0.0 size=N/A time=00:00:59.11 bitrate=N/A speed=   1x elapsed=0:00:58.87    
+frame= 3577 fps= 60 q=-0.0 size=N/A time=00:00:59.61 bitrate=N/A speed=   1x elapsed=0:00:59.37    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] EOF while reading input
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder thread received EOF packet
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Decoder returned EOF, finishing
+[vf#0:0 @ 0x7fd271808200] All consumers returned EOF
+[vost#0:0/wrapped_avframe @ 0x7fd271704b00] [enc:wrapped_avframe @ 0x7fd271705380] Encoder thread received EOF
+[vost#0:0/wrapped_avframe @ 0x7fd271704b00] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7fd271704080] All streams finished
+[out#0/null @ 0x7fd271704080] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x7fd271808200] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x7fd281704080] [dec:h264 @ 0x7fd271706000] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7fd271704080] Output file #0 (pipe:):
+[out#0/null @ 0x7fd271704080]   Output stream #0:0 (video): 3600 frames encoded; 3600 packets muxed (1526400 bytes); 
+[out#0/null @ 0x7fd271704080]   Total: 3600 packets (1526400 bytes) muxed
+[out#0/null @ 0x7fd271704080] video:1491KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 3600 fps= 60 q=-0.0 Lsize=N/A time=00:01:00.00 bitrate=N/A speed=1.01x elapsed=0:00:59.53    
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0] Input file #0 (/tmp/vegauvd-020-postboot/h264_1080p60.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0]   Input stream #0:0 (video): 3600 packets read (206886780 bytes); 3600 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0]   Total: 3600 packets (206886780 bytes) demuxed
+[AVIOContext @ 0x7fd2820050c0] Statistics: 206921160 bytes read, 21 seeks
+
+Exiting with exit code 0

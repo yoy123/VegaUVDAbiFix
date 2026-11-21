@@ -25,7 +25,7 @@ Validation completed on November 20, 2026.
 - Actual installed Apple driver binaries passed scripts/verify_recovery.py, including UUID, signature uniqueness, and failure branch destination.
 - The C++ regression harness passed with AddressSanitizer and UndefinedBehaviorSanitizer. Cases cover immediate and delayed completion, a two-second timeout, submission errors, invalid and empty events, absent hardware stamps, invalid allocation/task, and stamp wraparound.
 - The eight existing Python installer tests passed.
-- Live boot, hardware decode under the candidate, and recovery from a real UVD hang remain pending.
+- November 20 live boot and hardware decode validation passed for the selected clips, including repeated session creation and 3,600 frames per codec at 1080p60. Initial session failures and the complete results are in [postboot validation](postboot-0.2.0.md). Recovery from a real UVD hang and long-duration stability remain pending.
 
 To reproduce offline checks, run these commands from the repository.
 

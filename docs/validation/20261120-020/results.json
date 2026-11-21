@@ -1,0 +1,259 @@
+{
+  "system": {
+    "checked_at": "2026-11-20 20:46:25 -0500",
+    "sw_vers": "ProductName:\t\tmacOS\nProductVersion:\t\t15.8.2\nBuildVersion:\t\t24H232\n",
+    "boot": "kern.boottime: { sec = 1795224329, usec = 541983 } Fri Nov 20 20:25:29 2026",
+    "source_commit": "477557b066a187a76050ea29adde031919ba0e26",
+    "kexts": [
+      "57    0 0xffffff8004007000 0xb000     0xb000     org.dan.gpu.VegaUVDAbiFix (0.2.0) 1C401851-68B7-3398-A644-BB0810C5AA12 <56 9 7 6 3 2 1>",
+      "183    1 0xffffff7f95acf000 0x69ffc    0x69ffc    com.apple.iokit.IOAcceleratorFamily2 (485.2) 97A7305C-FB14-39FC-BC20-ED834ABCEB2D <133 109 48 31 18 9 8 7 6 3 1>",
+      "184    0 0xffffff7f8503c000 0x236000   0x236000   com.apple.kext.AMDRadeonX5000 (4.0.8) CA0F82D9-AF3C-3B51-AFEF-BD093CB64A92 <183 133 109 18 9 7 6 3 1>"
+    ]
+  },
+  "recorded_at": "2026-11-20T20:48:09.694147-05:00",
+  "patch_logs": [
+    "VegaUVDAbiFix      init: @ (DBG) VegaUVDAbiFix bootstrap DBG-020-2026-11-20",
+    "VegaUVDAbiFix   vegauvd: @ Registering descriptor fix and bounded UVD clear for Darwin 24",
+    "VegaUVDAbiFix   vegauvd: @ IOAccelerator recovery layout verified=1",
+    "VegaUVDAbiFix   vegauvd: @ UVD bounded-clear patch applied=1 offset=496637",
+    "VegaUVDAbiFix   vegauvd: @ HWLibs size check patched 0x358 to 0x348 (offset 2745005)"
+  ],
+  "frame_comparisons": [
+    {
+      "codec": "h264",
+      "resolution": "640x360",
+      "frames": 48,
+      "all_frame_md5_equal": true
+    },
+    {
+      "codec": "h264",
+      "resolution": "1080p60",
+      "frames": 180,
+      "all_frame_md5_equal": true
+    },
+    {
+      "codec": "hevc",
+      "resolution": "640x360",
+      "frames": 48,
+      "all_frame_md5_equal": true
+    },
+    {
+      "codec": "hevc",
+      "resolution": "1080p60",
+      "frames": 180,
+      "all_frame_md5_equal": true
+    }
+  ],
+  "session_and_sustained_results": [
+    {
+      "i": 0,
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 1.245,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fee2d706400]   Input stream #0:0 (video): 86 packets read (4969453 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 1,
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 1.468,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddee8063c0]   Input stream #0:0 (video): 88 packets read (727843 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 2,
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 1.254,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7ff3b3706400]   Input stream #0:0 (video): 87 packets read (5027704 bytes); 63 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 3,
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 1.451,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f79d6f06400]   Input stream #0:0 (video): 88 packets read (727843 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 4,
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 1.241,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe03a8063c0]   Input stream #0:0 (video): 86 packets read (4969453 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 5,
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 1.454,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fadc0804780]   Input stream #0:0 (video): 88 packets read (727843 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 6,
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 1.263,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa84f904080]   Input stream #0:0 (video): 87 packets read (5027704 bytes); 63 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 7,
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 1.469,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f9795f06400]   Input stream #0:0 (video): 88 packets read (727843 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 8,
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 1.246,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fc055804080]   Input stream #0:0 (video): 86 packets read (4969453 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 9,
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 1.478,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f8dbd0063c0]   Input stream #0:0 (video): 88 packets read (727843 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 10,
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 1.284,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd9f1804300]   Input stream #0:0 (video): 86 packets read (4969453 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "i": 11,
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 1.518,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fe6de904300]   Input stream #0:0 (video): 88 packets read (727843 bytes); 62 frames decoded; 0 decode errors;"
+      ]
+    },
+    {
+      "phase": "sustained",
+      "codec": "h264",
+      "exit": 0,
+      "seconds": 59.725,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd2820049c0]   Input stream #0:0 (video): 3600 packets read (206886780 bytes); 3600 frames decoded; 0 decode errors;"
+      ],
+      "output_summary": [
+        "[out#0/null @ 0x7fd271704080]   Output stream #0:0 (video): 3600 frames encoded; 3600 packets muxed (1526400 bytes);"
+      ],
+      "before": [
+        {
+          "HWChannel UVDDec | Commands Completed": 1378,
+          "HWChannel UVDDec | Commands Submitted": 1378,
+          "Temperature(C)": 74,
+          "recoveryCount": 0
+        },
+        {
+          "HWChannel UVDDec | Commands Completed": 0,
+          "HWChannel UVDDec | Commands Submitted": 0,
+          "Temperature(C)": 74,
+          "recoveryCount": 0
+        }
+      ],
+      "after": [
+        {
+          "HWChannel UVDDec | Commands Completed": 3602,
+          "HWChannel UVDDec | Commands Submitted": 3602,
+          "Temperature(C)": 74,
+          "recoveryCount": 0
+        },
+        {
+          "HWChannel UVDDec | Commands Completed": 0,
+          "HWChannel UVDDec | Commands Submitted": 0,
+          "Temperature(C)": 75,
+          "recoveryCount": 0
+        }
+      ]
+    },
+    {
+      "phase": "sustained",
+      "codec": "hevc",
+      "exit": 0,
+      "seconds": 59.703,
+      "hardware_frames": true,
+      "decode_summary": [
+        "[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fddcbf06440]   Input stream #0:0 (video): 3600 packets read (31253760 bytes); 3600 frames decoded; 0 decode errors;"
+      ],
+      "output_summary": [
+        "[out#0/null @ 0x7fddcbf10b80]   Output stream #0:0 (video): 3600 frames encoded; 3600 packets muxed (1526400 bytes);"
+      ],
+      "before": [
+        {
+          "HWChannel UVDDec | Commands Completed": 0,
+          "HWChannel UVDDec | Commands Submitted": 0,
+          "Temperature(C)": 75,
+          "recoveryCount": 0
+        },
+        {
+          "HWChannel UVDDec | Commands Completed": 0,
+          "HWChannel UVDDec | Commands Submitted": 0,
+          "Temperature(C)": 74,
+          "recoveryCount": 0
+        }
+      ],
+      "after": [
+        {
+          "HWChannel UVDDec | Commands Completed": 3602,
+          "HWChannel UVDDec | Commands Submitted": 3602,
+          "Temperature(C)": 74,
+          "recoveryCount": 0
+        },
+        {
+          "HWChannel UVDDec | Commands Completed": 0,
+          "HWChannel UVDDec | Commands Submitted": 0,
+          "Temperature(C)": 74,
+          "recoveryCount": 0
+        }
+      ]
+    }
+  ],
+  "postboot_graphics_reports": [],
+  "limitations": [
+    "First 640x360 H264 FFmpeg hardware session was unavailable; same file passed retry and all later 1080p session starts passed. Cause remains undetermined.",
+    "64x64 H264 fixture failed hardware session initialization and is not counted as a passing decode.",
+    "HEVC direct Swift session initially returned -12906 for hev1-tagged MP4; remuxing the same compressed stream to hvc1 produced status 0.",
+    "Recovery during a real UVD hang and long-duration stability are not validated.",
+    "Hardware encoding was not retested."
+  ]
+}
