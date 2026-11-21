@@ -1,0 +1,16 @@
+
+START state_started=0 fw_loaded=1 rings=0 fn238=com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCEHWEngine::setSaveRestoreState(bool) fn308=com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCE4HWEngine::initHardwareRings() fn280=com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCEHWEngine::initHardwareCail(bool)
+CONTROL op=7 initflag=0x10
+ENTER CailVceLoadEngine initflag=0x10
+RETURN CailVceLoadEngine status=0 initflag=0x10
+CONTROL op=1 initflag=0x10
+ENTER CailVceInit initflag=0x10
+RETURN CailVceInit status=1 initflag=0x10
+START state_started=0 fw_loaded=1 rings=0 fn238=com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCEHWEngine::setSaveRestoreState(bool) fn308=com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCE4HWEngine::initHardwareRings() fn280=com.apple.kext.AMDRadeonX5000`AMDRadeonX5000_AMDVCEHWEngine::initHardwareCail(bool)
+CONTROL op=7 initflag=0x10
+ENTER CailVceLoadEngine initflag=0x10
+RETURN CailVceLoadEngine status=0 initflag=0x10
+CONTROL op=1 initflag=0x10
+ENTER CailVceInit initflag=0x10
+RETURN CailVceInit status=1 initflag=0x10
+

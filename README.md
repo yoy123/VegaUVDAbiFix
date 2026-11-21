@@ -71,6 +71,8 @@ Removes only this plugin's Kernel/Add entry and EFI kext directory. Takes anothe
 
 ## Known issue: H.264 encoding
 
+The November 20 [encoder diagnosis](docs/h264-encoder.md) locates the current failure at VCE initialization: CAIL reports initialized while the Monterey driver reports stopped. The initial state guard returns 1, and the kernel returns 0xe00002c7. The originating lifecycle transition and a corrective patch remain unverified.
+
 H.264 hardware encoding still fails: VideoToolbox OSStatus -12903; AppleGVA reports Branch_Encoder1_AMD2 encoder context creation error 10 and AVFQTXENC_CreateInstance -12915. HEVC hardware encoding does work. H.264 software fallback works but is not hardware acceleration. **Do not assume an application requiring H.264 hardware encoding will work.**
 
 ## Build from source

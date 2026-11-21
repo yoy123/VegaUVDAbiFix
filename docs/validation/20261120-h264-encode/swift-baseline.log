@@ -1,0 +1,10 @@
+H264 hardware-required encoder creation status: -12903
+HEVC hardware-required encoder creation status: 0
+HEVC hardware encoder property status=0, value=Optional(1)
+/Volumes/RAID/Vega64 Driver Test/diagnostics/vt_encoder_hardware_required.swift:22:39: warning: forming 'UnsafeMutableRawPointer' to a variable of type 'Optional<AnyObject>'; this is likely incorrect because 'Optional<AnyObject>' may contain an object reference.
+20 |         let getStatus = VTSessionCopyProperty(
+21 |             session, key: kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder,
+22 |             allocator: nil, valueOut: &value
+   |                                       `- warning: forming 'UnsafeMutableRawPointer' to a variable of type 'Optional<AnyObject>'; this is likely incorrect because 'Optional<AnyObject>' may contain an object reference.
+23 |         )
+24 |         print("\(name) hardware encoder property status=\(getStatus), value=\(String(describing: value))")

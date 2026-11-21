@@ -1,0 +1,11 @@
+{
+  "vce-init-flags.log": "d7a896427430baf6948d7007fb1de97d60805593945c1483f7a8c7ac7c5434cb",
+  "vce-diagnosis.log": "54d5f1e2abc9f60d194dae85a6c238be6daf305c2039743ca6b764a902447713",
+  "swift-baseline.log": "27a627a968a4cd511a4a5bef4a3471843d06e8bb8068fb35c5300b95b4f58f2b",
+  "h264-baseline.log": "b7302241ba1e3d82d5b60400df3e8894285740c33bcaf9e8f14cbdf308d34ceb",
+  "results.json": "9b70167c67130bc58e73248c5198b7b0acb4a6662d7eafbd4ea1d21350c59b8a",
+  "vce-engine-state.log": "4d695d653fb53430e5d26757b1d21f6be7cf4f84fca9bf3dcaf2102845dfcb5e",
+  "hevc-baseline.log": "14ca68b2f79f0fe8ae47075f8b89ddc95eaf07568c9eda773b7d68d79a29ecb6",
+  "h264-final-encode.log": "f8e24bb7047b075ea0a6b3bcaf076022813e37d33aac1a69be838258dc7f0288",
+  "hevc-final-encode.log": "28fb41798cf4256bf416441c9f3a2f55be440019459a2877c910e67b17ff8b99"
+}

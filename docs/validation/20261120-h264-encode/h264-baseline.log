@@ -1,0 +1,35 @@
+[Parsed_testsrc2_0 @ 0x7fc107f06d80] size:640x360 rate:24/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=640x360:rate=24':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 640x360 [SAR 1:1 DAR 16:9], 24 fps, 24 tbr, 24 tbn
+[out#0/null @ 0x7fc107f07840] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_videotoolbox))
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] Starting thread...
+[vf#0:0 @ 0x7fc10800fa00] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x7fc107f076c0] [dec:wrapped_avframe @ 0x7fc107f0b3c0] Starting thread...
+[in#0/lavfi @ 0x7fc107f063c0] Starting thread...
+[graph -1 input from stream 0:0 @ 0x7fc100104880] w:640 h:360 pixfmt:yuv420p tb:1/24 fr:24/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[graph -1 input from stream 0:0 @ 0x7fc100104880] video frame properties congruent with link at pts_time: 0
+[h264_videotoolbox @ 0x7fc107f099c0] Cannot create compression session: -12903
+[h264_videotoolbox @ 0x7fc107f099c0] Try -allow_sw 1. The hardware encoder may be busy, or not supported.
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] [enc:h264_videotoolbox @ 0x7fc107f09940] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[vf#0:0 @ 0x7fc10800fa00] Error sending frames to consumers: Generic error in an external library
+[vf#0:0 @ 0x7fc10800fa00] Task finished with error code: -542398533 (Generic error in an external library)
+[vf#0:0 @ 0x7fc10800fa00] Terminating thread with return code -542398533 (Generic error in an external library)
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] [enc:h264_videotoolbox @ 0x7fc107f09940] Encoder thread received EOF
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] [enc:h264_videotoolbox @ 0x7fc107f09940] Could not open encoder before EOF
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/h264_videotoolbox @ 0x7fc107f09280] Terminating thread with return code -22 (Invalid argument)
+[vist#0:0/wrapped_avframe @ 0x7fc107f076c0] [dec:wrapped_avframe @ 0x7fc107f0b3c0] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x7fc107f076c0] [dec:wrapped_avframe @ 0x7fc107f0b3c0] Terminating thread with return code 0 (success)
+[in#0/lavfi @ 0x7fc107f063c0] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7fc107f07840] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.76    
+[in#0/lavfi @ 0x7fc107f063c0] Input file #0 (testsrc2=size=640x360:rate=24):
+[in#0/lavfi @ 0x7fc107f063c0]   Input stream #0:0 (video): 3 packets read (1272 bytes); 2 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x7fc107f063c0]   Total: 3 packets (1272 bytes) demuxed
+Conversion failed!
+
+Exiting with exit code -542398533

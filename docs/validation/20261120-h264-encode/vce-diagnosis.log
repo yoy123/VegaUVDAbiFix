@@ -1,0 +1,28 @@
+KERNEL_START pid=21725 channel=6 size=12
+VCE_START pid=21725 started=0 firmware_loaded=1
+CAIL_VCE op=7 initialized=1
+LOAD_ENTER flag=0x10
+LOAD_RESULT status=0 flag=0x10
+CAIL_VCE op=1 initialized=1
+INIT_ENTER flags=0x10 size=0xd8
+INIT_RESULT status=1 flags=0x10
+VCE_INIT_CAIL_RESULT bool=0
+VCE_START_RESULT pid=21725 bool=0
+KERNEL_START_RESULT pid=21725 channel=6 status=0xe00002c7
+KERNEL_START pid=21725 channel=6 size=12
+VCE_START pid=21725 started=0 firmware_loaded=1
+CAIL_VCE op=7 initialized=1
+LOAD_ENTER flag=0x10
+LOAD_RESULT status=0 flag=0x10
+CAIL_VCE op=1 initialized=1
+INIT_ENTER flags=0x10 size=0xd8
+INIT_RESULT status=1 flags=0x10
+VCE_INIT_CAIL_RESULT bool=0
+VCE_START_RESULT pid=21725 bool=0
+KERNEL_START_RESULT pid=21725 channel=6 status=0xe00002c7
+KERNEL_START pid=21735 channel=2 size=12
+KERNEL_START_RESULT pid=21735 channel=2 status=0x0
+KERNEL_START pid=21735 channel=2 size=12
+KERNEL_START_RESULT pid=21735 channel=2 status=0x0
+
+

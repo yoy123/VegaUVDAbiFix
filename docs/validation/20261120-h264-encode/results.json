@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-11-20T21:15:14.912406-05:00",
+  "boot": "kern.boottime: { sec = 1795224329, usec = 541983 } Fri Nov 20 20:25:29 2026",
+  "source_commit": "6104251fb2b42fcb80a6f5b75b77536c89e95913",
+  "loaded_kexts": [
+    "57    0 0xffffff8004007000 0xb000     0xb000     org.dan.gpu.VegaUVDAbiFix (0.2.0) 1C401851-68B7-3398-A644-BB0810C5AA12 <56 9 7 6 3 2 1>",
+    "183    1 0xffffff7f95acf000 0x69ffc    0x69ffc    com.apple.iokit.IOAcceleratorFamily2 (485.2) 97A7305C-FB14-39FC-BC20-ED834ABCEB2D <133 109 48 31 18 9 8 7 6 3 1>",
+    "184    0 0xffffff7f8503c000 0x236000   0x236000   com.apple.kext.AMDRadeonX5000 (4.0.8) CA0F82D9-AF3C-3B51-AFEF-BD093CB64A92 <183 133 109 18 9 7 6 3 1>"
+  ],
+  "accelerators": [
+    {
+      "registry_id": 4294969297,
+      "name": "AMDRadeonX5000_AMDVega10GraphicsAccelerator",
+      "counters": {
+        "HWChannel UVDEnc | Commands Completed": 0,
+        "HWChannel UVDEnc | Commands Submitted": 0,
+        "HWChannel UVDEncLLQ | Commands Completed": 0,
+        "HWChannel UVDEncLLQ | Commands Submitted": 0,
+        "HWChannel VCE | Commands Completed": 0,
+        "HWChannel VCE | Commands Submitted": 0,
+        "HWChannel VCELLQ | Commands Completed": 0,
+        "HWChannel VCELLQ | Commands Submitted": 0,
+        "contextVideoCount": 0,
+        "recoveryCount": 0
+      }
+    }
+  ],
+  "observed_failure": {
+    "input_selector": "0x106",
+    "input_bytes": 12,
+    "h264_channel": 6,
+    "firmware_load_status": 0,
+    "cail_vce_init_flag": "0x10",
+    "cail_vce_init_result": 1,
+    "driver_started_flag": 0,
+    "vce_engine_start_result": false,
+    "kernel_ioreturn": "0xe00002c7",
+    "videotoolbox_status": -12903
+  },
+  "limits": [
+    "First transition into the divergent initialized/stopped state was not captured.",
+    "Successful firmware-load status does not establish firmware contents or execution are correct.",
+    "No binary patch, state reset, EFI edit, reboot, or forced success was performed."
+  ]
+}

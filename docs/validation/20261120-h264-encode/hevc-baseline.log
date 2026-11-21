@@ -1,0 +1,42 @@
+[Parsed_testsrc2_0 @ 0x7f7f01706d80] size:640x360 rate:24/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=640x360:rate=24':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 640x360 [SAR 1:1 DAR 16:9], 24 fps, 24 tbr, 24 tbn
+[out#0/null @ 0x7f7f01707840] No explicit maps, mapping streams automatically...
+[vost#0:0/hevc_videotoolbox @ 0x7f7f01709280] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (hevc_videotoolbox))
+[vost#0:0/hevc_videotoolbox @ 0x7f7f01709280] Starting thread...
+[vf#0:0 @ 0x7f7f0180fa00] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x7f7f017076c0] [dec:wrapped_avframe @ 0x7f7f0170b3c0] Starting thread...
+[in#0/lavfi @ 0x7f7f017063c0] Starting thread...
+[graph -1 input from stream 0:0 @ 0x7f7ef2004440] w:640 h:360 pixfmt:yuv420p tb:1/24 fr:24/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[graph -1 input from stream 0:0 @ 0x7f7ef2004440] video frame properties congruent with link at pts_time: 0
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.12.102
+  Stream #0:0: Video: hevc, 1 reference frame, yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 24 fps, 24 tbn
+    Metadata:
+      encoder         : Lavc62.28.102 hevc_videotoolbox
+[out#0/null @ 0x7f7f01707840] Starting thread...
+[vf#0:0 @ 0x7f7f0180fa00] All consumers returned EOF
+[vf#0:0 @ 0x7f7f0180fa00] Terminating thread with return code 0 (success)
+[vist#0:0/wrapped_avframe @ 0x7f7f017076c0] [dec:wrapped_avframe @ 0x7f7f0170b3c0] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x7f7f017076c0] [dec:wrapped_avframe @ 0x7f7f0170b3c0] Terminating thread with return code 0 (success)
+[vist#0:0/wrapped_avframe @ 0x7f7f017076c0] All consumers of this stream are done
+[in#0/lavfi @ 0x7f7f017063c0] All consumers are done
+[in#0/lavfi @ 0x7f7f017063c0] Terminating thread with return code 0 (success)
+[vost#0:0/hevc_videotoolbox @ 0x7f7f01709280] [enc:hevc_videotoolbox @ 0x7f7f01709940] Encoder thread received EOF
+[vost#0:0/hevc_videotoolbox @ 0x7f7f01709280] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7f7f01707840] All streams finished
+[out#0/null @ 0x7f7f01707840] Terminating thread with return code 0 (success)
+[out#0/null @ 0x7f7f01707840] Output file #0 (pipe:):
+[out#0/null @ 0x7f7f01707840]   Output stream #0:0 (video): 24 frames encoded; 24 packets muxed (164072 bytes); 
+[out#0/null @ 0x7f7f01707840]   Total: 24 packets (164072 bytes) muxed
+[out#0/null @ 0x7f7f01707840] video:160KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   24 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.95 bitrate=N/A speed=1.45x elapsed=0:00:00.66    
+[in#0/lavfi @ 0x7f7f017063c0] Input file #0 (testsrc2=size=640x360:rate=24):
+[in#0/lavfi @ 0x7f7f017063c0]   Input stream #0:0 (video): 37 packets read (15688 bytes); 28 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x7f7f017063c0]   Total: 37 packets (15688 bytes) demuxed
+
+Exiting with exit code 0
