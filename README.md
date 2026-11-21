@@ -1,5 +1,7 @@
 # VegaUVDAbiFix
 
+**November 21 stability candidate (0.2.1):** A uniquely matched safety guard rejects the unstable Vega VCE/H.264 hardware encoder start before GPU command submission. Existing H.264/HEVC hardware decoding and HEVC UVD encoding patches are preserved. The 0.2.1 bundle is staged on EFI for the next user-approved reboot, but is **not boot-tested or active yet**. This is a safety mitigation, not an H.264 encoder repair. See [VCE crash guard and rollback](docs/vce-crash-guard-0.2.1.md).
+
 Experimental OpenCore/Lilu plugin restoring AMD Vega UVD7 hardware video decoding on macOS Sequoia when OCLP uses Monterey AMD drivers.
 
 **The fix/uvd-reset-wait branch builds the 0.2.0 experimental recovery candidate.** It retains the hardware decode patch and adds a bounded GPU firmware clear to address the November 20 restart deadlock. Offline tests pass. November 20 boot validation confirms patch application and H.264/HEVC hardware decoding, including 3,600 frames per codec at 1080p60; recovery from a real GPU hang and long-duration stability remain unvalidated. See [postboot results and exceptions](docs/postboot-0.2.0.md) and [UVD recovery investigation](docs/uvd-recovery.md).

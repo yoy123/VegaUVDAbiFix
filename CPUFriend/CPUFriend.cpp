@@ -69,6 +69,7 @@ void CPUFriendPlugin::patchKext(KernelPatcher &patcher, size_t index, mach_vm_ad
         amdAddress = address;
         amdSize = size;
         patchRecovery();
+        patchVceGuard();
         return;
     }
     if (index != targets[2].loadIndex)
@@ -128,4 +129,35 @@ void CPUFriendPlugin::patchRecovery() {
     memcpy(replacement + 19, &failureBranch, sizeof(failureBranch));
     recoveryApplied = KernelPatcher::findAndReplace(memory + offset, sizeof(find), find, replacement);
     SYSLOG("vegauvd", "UVD bounded-clear patch applied=%u offset=%lu", recoveryApplied, static_cast<unsigned long>(offset));
+}
+
+
+void CPUFriendPlugin::patchVceGuard() {
+    if (vceGuardApplied || amdAddress == 0 || amdSize < 64)
+        return;
+    // Verified CA0F82D9 AMDVCEHWEngine::start prologue at 0x77dea.
+    // Default-deny VCE startup before any firmware or VCELLQ submission:
+    // H.264 hardware encode cannot currently initialize reliably on this
+    // Monterey-driver/Sequoia-HWLibs combination and has triggered a GPU hang.
+    // Hardware UVD decode and HEVC UVD encoder LLQ are left unchanged.
+    static const uint8_t signature[] = {
+        0x55,0x48,0x89,0xe5,0x41,0x56,0x53,0x48,0x83,0xec,0x10,0x48,0x89,0xfb,
+        0x80,0x7f,0x10,0x00,0x74,0x0b,0xff,0x83,0x38,0x01,0x00,0x00,
+        0x41,0xb6,0x01,0xeb,0x74
+    };
+    static const uint8_t before[] = {0x55,0x48,0x89,0xe5};
+    static const uint8_t after[] = {0x31,0xc0,0xc3,0x90}; // xor eax,eax; ret; nop
+    auto memory = reinterpret_cast<uint8_t *>(amdAddress);
+    size_t offset = 0, duplicate = 0;
+    if (!KernelPatcher::findPattern(signature, nullptr, sizeof(signature),
+                                    memory, amdSize, &offset) ||
+        KernelPatcher::findPattern(signature, nullptr, sizeof(signature),
+                                   memory + offset + 1, amdSize - offset - 1, &duplicate)) {
+        SYSLOG("vegauvd", "VCE safety guard refused: absent or non-unique signature");
+        return;
+    }
+    vceGuardApplied = KernelPatcher::findAndReplace(memory + offset,
+                                                     sizeof(before), before, after);
+    SYSLOG("vegauvd", "VCE safety guard applied=%u offset=%lu",
+           vceGuardApplied, static_cast<unsigned long>(offset));
 }
