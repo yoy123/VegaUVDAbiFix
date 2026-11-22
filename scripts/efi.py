@@ -78,7 +78,7 @@ def preflight_payload(root):
         raise InstallError("Missing release payload: payload/VegaUVDAbiFix.kext")
     meta = plistlib.loads(inf.read_bytes())
     if (meta.get("CFBundleIdentifier") != IDENT or
-            meta.get("CFBundleVersion") != "0.1.0" or
+            meta.get("CFBundleVersion") != "0.2.1" or
             meta.get("OSBundleCompatibleVersion") != "0.1.0"):
         raise InstallError("Payload bundle ID/version/compatibility unexpected")
     if exe.stat().st_size < 10000:

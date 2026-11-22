@@ -43,7 +43,7 @@ class OpenCoreInstallerTests(unittest.TestCase):
         plugin = installer.preflight_payload(ROOT)
         self.assertEqual(
             installer.sha256(plugin / "Contents/MacOS/VegaUVDAbiFix"),
-            "eab698390155665f0b0caa03b8962a027964951215482c00da95bbe50e586c43",
+            "87dadada664598ae24cf11125ec052effe0fa458a7df6fba13d40e95e3873758",
         )
 
     def test_install_preserves_existing_entries_and_backups(self):

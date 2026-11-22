@@ -1,12 +1,12 @@
 # VegaUVDAbiFix
 
-**November 21 stability candidate (0.2.1):** A uniquely matched safety guard rejects the unstable Vega VCE/H.264 hardware encoder start before GPU command submission. Existing H.264/HEVC hardware decoding and HEVC UVD encoding patches are preserved. The 0.2.1 bundle is staged on EFI for the next user-approved reboot, but is **not boot-tested or active yet**. This is a safety mitigation, not an H.264 encoder repair. See [VCE crash guard and rollback](docs/vce-crash-guard-0.2.1.md).
+**November 21 stability candidate (0.2.1):** A uniquely matched safety guard rejects the unstable Vega VCE/H.264 hardware encoder start before GPU command submission. Existing H.264/HEVC hardware decoding and HEVC UVD encoding patches are preserved. macOS loaded the 0.2.1 bundle on the test Mac Pro. Hardware encoding and long-term stability remain unverified for this build. H.264 hardware encoding remains unavailable. See [VCE crash guard and rollback](docs/vce-crash-guard-0.2.1.md).
 
 Experimental OpenCore/Lilu plugin restoring AMD Vega UVD7 hardware video decoding on macOS Sequoia when OCLP uses Monterey AMD drivers.
 
 **The fix/uvd-reset-wait branch builds the 0.2.0 experimental recovery candidate.** It retains the hardware decode patch and adds a bounded GPU firmware clear to address the November 20 restart deadlock. Offline tests pass. November 20 boot validation confirms patch application and H.264/HEVC hardware decoding, including 3,600 frames per codec at 1080p60; recovery from a real GPU hang and long-duration stability remain unvalidated. See [postboot results and exceptions](docs/postboot-0.2.0.md) and [UVD recovery investigation](docs/uvd-recovery.md).
 
-**Status: v0.1.0-alpha — tested on one Mac only.** Source and installer are supplied for audit. Not affiliated with Apple, Acidanthera, PMheart, or OCLP.
+**Current prerelease: v0.2.1-alpha.** Source and installer are supplied for audit. Not affiliated with Apple, Acidanthera, PMheart, or OCLP.
 
 ## Results on tested system
 
@@ -42,7 +42,7 @@ See [Technical details](docs/technical.md).
 
 1. Make an **independent, full EFI backup** and prepare a known-good recovery USB before changing boot files.
 2. In Terminal, run **diskutil list** and identify the actual EFI partition used by your OpenCore. Do not assume it is disk0s1.
-3. Download and extract the [v0.1.0-alpha release archive](https://github.com/yoy123/VegaUVDAbiFix/releases/tag/v0.1.0-alpha).
+3. Download and extract the [v0.2.1-alpha release archive](https://github.com/yoy123/VegaUVDAbiFix/releases/tag/v0.2.1-alpha).
 4. From the extracted release directory, run (replace disk0s1 with your own EFI identifier):
 
         sudo ./install.sh --efi disk0s1
